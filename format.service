@@ -1,0 +1,13 @@
+[Unit]
+Description=Jupyter Lab (by p36)
+
+[Service]
+Type=simple
+#WorkingDirectory=/home/yp/workspace
+ExecStart=/bin/bash /home/yp/Public/jupyterlab.sh
+Restart=always
+RestartSec=10
+User=yp
+
+[Install]
+WantedBy=multi-user.target
